@@ -102,7 +102,7 @@ def convert(mrc_file, out_filename):
                 if record[key]is not None and record[key][value]:
                     field = key+value
                     overlap_fields.append(field)
-        print overlap_fields
+			
         # print/online identifiers
         if '020a' in overlap_fields:
             kbart_entry['print_identifier'] = clean_identifier(
